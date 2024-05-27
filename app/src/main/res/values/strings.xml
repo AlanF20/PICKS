@@ -17,4 +17,5 @@
         </item>
     </string-array>
     <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_guitar_list">GuitarList</string>
 </resources>

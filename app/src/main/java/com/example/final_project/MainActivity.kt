@@ -10,7 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.final_project.guitarlist.GuitarList
+import com.example.final_project.guitarlist.GuitarListBody
 import com.example.final_project.login.Login
+import com.example.final_project.services.viewmodels.LoginViewModel
 import com.example.final_project.splash.Splash
 import com.example.final_project.ui.theme.Final_projectTheme
 
@@ -34,7 +37,10 @@ class MainActivity : ComponentActivity() {
                             Splash(navController = navController)
                         }
                         composable("login"){
-                            Login()
+                            Login(viewModel = LoginViewModel(), navController = navController)
+                        }
+                        composable("list"){
+                           GuitarListBody()
                         }
                     }
                 }

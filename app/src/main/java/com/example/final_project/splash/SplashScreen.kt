@@ -140,7 +140,7 @@ fun Splash(modifier: Modifier = Modifier, navController: NavController){
             )
             Text(
                 text = "#PLAY YOUR PICK",
-                color = Color(0xFFE5F33C),
+                color = Color(0xFFF3E13C),
                 fontFamily = fontFamily2,
                 fontSize = 24.sp,
                 style = noPad,
